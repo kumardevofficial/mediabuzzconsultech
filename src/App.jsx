@@ -1,7 +1,14 @@
 import "./App.css";
+import Footer from "./components/Footer/Footer";
+import HeaderMenu from "./components/HeaderMenu/HeaderMenu";
+import ImageSlider from "./components/ImageSlider/ImageSlider";
 
 export default function App() {
   return (
-    <h1 className="text-3xl font-bold underline">Web Under Contruction</h1>
+    <>
+      <HeaderMenu />
+      <ImageSlider />
+      <Footer />
+    </>
   );
 }
