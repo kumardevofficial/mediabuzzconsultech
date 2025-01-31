@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="bg-blue-900 text-white py-10 mt-10">
+    <footer className="bg-black text-white py-10 mt-32">
       <div className="container mx-auto px-4">
         {/* Top Section */}
         <div className="grid grid-cols-1 md:grid-cols-4 gap-6 text-center md:text-left">
@@ -15,8 +15,8 @@ const Footer = () => {
                 className="w-12 h-12 mr-2"
               />
               <div>
-                <h1 className="text-xl font-bold">ABROAD</h1>
-                <p className="text-sm">TOURISTS WITH AID</p>
+                <h1 className="text-xl font-bold">MEDIA</h1>
+                <p className="text-sm"> Buzz Consultech</p>
               </div>
             </div>
             <p className="text-sm mb-4">
@@ -108,7 +108,7 @@ const Footer = () => {
 
           {/* Newsletter */}
           <div>
-            <h3 className="font-semibold text-lg mb-3">Newsletter</h3>
+            {/* <h3 className="font-semibold text-lg mb-3">Newsletter</h3>
             <form className="flex flex-col space-y-2">
               <input
                 type="email"
@@ -121,7 +121,7 @@ const Footer = () => {
               >
                 SUBSCRIBE
               </button>
-            </form>
+            </form> */}
           </div>
         </div>
 

@@ -1,14 +1,37 @@
+import { useState } from "react";
 import "./App.css";
 import Footer from "./components/Footer/Footer";
 import HeaderMenu from "./components/HeaderMenu/HeaderMenu";
 import ImageSlider from "./components/ImageSlider/ImageSlider";
+// import MultiStagePopup from "./components/PopUp/PopUP";
+import QueryForm from "./components/PopUp/PopUP";
+import HeroSection from "./components/HeroSection/HeroSection";
+import CustomerReviews from "./components/CustomerReview/CustomerReview";
+import WhyChooseMediaJenie from "./components/WhyChoose/WhyChoose";
+import ContentServiceSection from "./components/ServiceSection/FirstService";
+import FirstService from "./components/ServiceSection/FirstService";
+import SecondService from "./components/ServiceSection/SecondService";
+import ThirdSection from "./components/ServiceSection/ThirdSection";
+import FourthSection from "./components/ServiceSection/FourthSection";
 
 export default function App() {
+  const [popupVisiblity, setPopupVisiblity] = useState(false);
   return (
     <>
-      <HeaderMenu />
-      <ImageSlider />
+      <HeaderMenu pupUpToggle={{ popupVisiblity, setPopupVisiblity }} />
+      <HeroSection />
+      <WhyChooseMediaJenie />
+      <CustomerReviews />
+      <div>
+        <FirstService />
+        <SecondService />
+        <ThirdSection />
+        <FourthSection />
+      </div>
+      {/* <ImageSlider /> */}
       <Footer />
+      {/* <MultiStagePopup pupUpToggle={{ popupVisiblity, setPopupVisiblity }} /> */}
+      <QueryForm pupUpToggle={{ popupVisiblity, setPopupVisiblity }} />
     </>
   );
 }
