@@ -45,7 +45,7 @@ const Footer = () => {
               {
                 icon: <HiPhone className="text-pink-500 w-6 h-6" />,
                 label: "Phone",
-                info: "(+00) 000 000 000",
+                info: "+91 629 727 5903",
               },
               {
                 icon: <HiMail className="text-pink-500 w-6 h-6" />,
@@ -82,13 +82,13 @@ const Footer = () => {
 
           {/* Our Team Section */}
           <div className="text-center md:text-left bg-gray-900 p-4 rounded-lg shadow-lg">
-            <h2 className="text-xl font-bold text-white mb-3 pb-2 border-b border-gray-700">
+            <h2 className="text-xl font-bold text-yellow-500 mb-3 pb-2 border-b border-gray-700">
               Our Team
             </h2>
             <div className="space-y-3 text-gray-400">
               <div className="flex items-center space-x-2">
                 <span className="font-semibold text-gray-300">Proprietor:</span>
-                <span>Pallabi M</span>
+                <span>Pallabi Mukherjee</span>
               </div>
               <div className="flex items-center space-x-2">
                 <span className="font-semibold text-gray-300">
