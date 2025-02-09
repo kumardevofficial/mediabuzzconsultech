@@ -3,7 +3,8 @@ import { useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 import laptop from "../../assets/laptop.png";
 
-const SecondService = () => {
+const SecondService = ({ pupUpToggle }) => {
+  const { popupVisiblity, setPopupVisiblity } = pupUpToggle;
   const leftControls = useAnimation();
   const rightControls = useAnimation();
   const [refLeft, inViewLeft] = useInView({
@@ -41,7 +42,10 @@ const SecondService = () => {
           <li>Strapi / Headless CMS</li>
           <li>MongoDB / Postgres</li>
         </ul>
-        <button className="mt-6 px-6 py-3 bg-black text-white rounded-lg">
+        <button
+          className="mt-6 px-6 py-3 bg-black text-white rounded-lg"
+          onClick={() => setPopupVisiblity(true)}
+        >
           Book a Free Consultation
         </button>
       </motion.div>

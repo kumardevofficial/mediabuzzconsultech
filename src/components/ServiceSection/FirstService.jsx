@@ -3,7 +3,8 @@ import { useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 import thinking from "../../assets/thinking.png";
 
-const FirstService = () => {
+const FirstService = ({ pupUpToggle }) => {
+  const { popupVisiblity, setPopupVisiblity } = pupUpToggle;
   const leftControls = useAnimation();
   const rightControls = useAnimation();
   const [refLeft, inViewLeft] = useInView({
@@ -53,7 +54,10 @@ const FirstService = () => {
           for your business.
         </p>
         <p className="font-semibold">Writing | Photography | Videos</p>
-        <button className="mt-6 px-6 py-3 bg-black text-white rounded-lg">
+        <button
+          className="mt-6 px-6 py-3 bg-black text-white rounded-lg"
+          onClick={() => setPopupVisiblity(true)}
+        >
           Book a Free Consultation
         </button>
       </motion.div>

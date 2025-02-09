@@ -19,14 +19,14 @@ export default function App() {
   return (
     <>
       <HeaderMenu pupUpToggle={{ popupVisiblity, setPopupVisiblity }} />
-      <HeroSection />
+      <HeroSection pupUpToggle={{ popupVisiblity, setPopupVisiblity }} />
       <WhyChooseMediaJenie />
       <CustomerReviews />
       <div>
-        <FirstService />
-        <SecondService />
-        <ThirdSection />
-        <FourthSection />
+        <FirstService pupUpToggle={{ popupVisiblity, setPopupVisiblity }} />
+        <SecondService pupUpToggle={{ popupVisiblity, setPopupVisiblity }} />
+        <ThirdSection pupUpToggle={{ popupVisiblity, setPopupVisiblity }} />
+        <FourthSection pupUpToggle={{ popupVisiblity, setPopupVisiblity }} />
       </div>
       {/* <ImageSlider /> */}
       <Footer />

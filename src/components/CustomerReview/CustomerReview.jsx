@@ -6,27 +6,27 @@ const reviews = [
   {
     name: "Sajid Asfi",
     position: "VP Pavana Valley, Navi Mumbai",
-    text: "We had a fantastic experience with MediaJenie with 2 of our projects. They have a great creative team & always offer fresh & out of the box ideas. My best wishes to them.",
+    text: "We had a fantastic experience with Media Buzz Consultech with 2 of our projects. They have a great creative team & always offer fresh & out of the box ideas. My best wishes to them.",
   },
   {
     name: "John Doe",
     position: "CEO of TechWave",
-    text: "MediaJenie transformed our website and increased our engagement drastically. The team is creative and professional.",
+    text: "Media Buzz Consultech transformed our website and increased our engagement drastically. The team is creative and professional.",
   },
   {
     name: "Emily Johnson",
     position: "Marketing Head, BrightAgency",
-    text: "Absolutely loved the service provided by MediaJenie! Their attention to detail and innovative approach is commendable.",
+    text: "Absolutely loved the service provided by Media Buzz Consultech! Their attention to detail and innovative approach is commendable.",
   },
   {
     name: "Michael Smith",
     position: "Founder, StartUpX",
-    text: "Great experience working with MediaJenie. They understand the requirements perfectly and deliver top-notch solutions.",
+    text: "Great experience working with Media Buzz Consultech. They understand the requirements perfectly and deliver top-notch solutions.",
   },
   {
     name: "Sophia Williams",
     position: "CMO, BigBrands",
-    text: "Highly professional and creative team. MediaJenie has helped us scale our brand presence significantly.",
+    text: "Highly professional and creative team. Media Buzz Consultech has helped us scale our brand presence significantly.",
   },
 ];
 

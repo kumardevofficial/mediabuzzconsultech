@@ -1,4 +1,5 @@
-const HeroLeft = () => {
+const HeroLeft = ({ justVisible }) => {
+  // const { setPopupVisiblity } = justVisible;
   return (
     <section className="p-6 md:p-12 bg-white text-black">
       <div className="max-w-2xl mx-auto text-center md:text-left ">
@@ -16,7 +17,10 @@ const HeroLeft = () => {
         <p className="mt-2 text-md text-gray-600">
           Custom Made + Great Content + Quick Loading
         </p>
-        <button className="mt-6 px-6 py-3 bg-black text-white font-semibold rounded-full relative">
+        <button
+          className="mt-6 px-6 py-3 bg-black text-white font-semibold rounded-full relative"
+          onClick={() => justVisible(true)}
+        >
           Book a Free Consultation
           <span className="absolute inset-0 transform scale-110 bg-white opacity-10 rounded-full"></span>
         </button>

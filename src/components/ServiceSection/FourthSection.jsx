@@ -1,7 +1,8 @@
 import { motion } from "framer-motion";
 import laptop from "../../assets/pmm.png";
 
-const FourthSection = () => {
+const FourthSection = ({ pupUpToggle }) => {
+  const { popupVisiblity, setPopupVisiblity } = pupUpToggle;
   return (
     <div className="flex flex-col md:flex-row items-center justify-between min-h-screen p-10 w-[90%] m-auto">
       {/* Left Section */}
@@ -28,7 +29,10 @@ const FourthSection = () => {
           <li>Introduction Video on the Home page</li>
           <li>and Many more...!</li>
         </ul>
-        <button className="mt-6 px-6 py-3 bg-black text-white rounded-lg">
+        <button
+          className="mt-6 px-6 py-3 bg-black text-white rounded-lg"
+          onClick={() => setPopupVisiblity(true)}
+        >
           Book a Free Consultation
         </button>
       </motion.div>

@@ -1,7 +1,8 @@
 import { motion } from "framer-motion";
 import laptop from "../../assets/pmy.png";
 
-const ThirdSection = () => {
+const ThirdSection = ({ pupUpToggle }) => {
+  const { popupVisiblity, setPopupVisiblity } = pupUpToggle;
   return (
     <div className="flex flex-col md:flex-row items-center justify-between min-h-screen px-10 py-10 ">
       {/* Left Section */}
@@ -31,7 +32,10 @@ const ThirdSection = () => {
           Attract visitors. And convert them into leads & sales. That is how
           YOUR website must be.
         </p>
-        <button className="mt-6 px-6 py-3 bg-black text-white rounded-lg">
+        <button
+          className="mt-6 px-6 py-3 bg-black text-white rounded-lg"
+          onClick={() => setPopupVisiblity(true)}
+        >
           Book a Free Consultation
         </button>
       </motion.div>

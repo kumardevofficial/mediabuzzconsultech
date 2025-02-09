@@ -59,7 +59,7 @@ const WhyChooseMediaJenie = () => {
   return (
     <section className=" py-28 px-4 text-center my-20 bg-gray-200 ">
       <h2 className="text-3xl font-bold text-black mb-12">
-        Why choose MediaJenie as your website agency?
+        Why choose Media Buzz Consultech as your website agency?
       </h2>
       <motion.div
         ref={ref}

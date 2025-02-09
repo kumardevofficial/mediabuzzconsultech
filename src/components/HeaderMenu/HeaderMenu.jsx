@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import headerLogo from "../../assets/logo.png";
+import headerLogo from "../../assets/onlylogo.png";
 
 const HeaderMenu = ({ pupUpToggle }) => {
   const { popupVisiblity, setPopupVisiblity } = pupUpToggle;
@@ -11,8 +11,14 @@ const HeaderMenu = ({ pupUpToggle }) => {
     <header className="bg-gray-100 shadow-md py-3 m-auto md:mt-2 md:w-[98%] w-full">
       <div className="container mx-auto flex justify-between items-center px-4">
         {/* Logo Section */}
-        <div className="flex items-center">
-          <img src={headerLogo} alt="Logo" className=" h-10" />
+        <div className="flex items-center gap-x-3">
+          <img src={headerLogo} alt="Logo" className=" h-10 rounded-full" />
+          <div className="flex flex-col ">
+            <div className="font-bold  text-yellow-600 text-center ">
+              MEDIA BUZZ
+            </div>
+            <div className="m-[-5px] text-center">CONSULTECH</div>
+          </div>
         </div>
 
         {/* Desktop Navigation */}
